@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "Hash": "KJfQaeXYy6q/ZPg5SRj/VrD1CfPAICpYd+UseDHU1bk=",
+  "Source": "InoxWebApp",
+  "BasePath": "_content/InoxWebApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "InoxWebApp\\wwwroot",
+      "Source": "InoxWebApp",
+      "ContentRoot": "C:\\Users\\udit.kumar\\source\\repos\\SyncDataApplication\\InoxWebApp\\wwwroot\\",
+      "BasePath": "_content/InoxWebApp",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\udit.kumar\\source\\repos\\SyncDataApplication\\InoxWebApp\\wwwroot\\css\\font-awesome.css",
+      "SourceId": "InoxWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\udit.kumar\\source\\repos\\SyncDataApplication\\InoxWebApp\\wwwroot\\",
+      "BasePath": "_content/InoxWebApp",
+      "RelativePath": "css/font-awesome.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\font-awesome.css"
+    },
+    {
+      "Identity": "C:\\Users\\udit.kumar\\source\\repos\\SyncDataApplication\\InoxWebApp\\wwwroot\\css\\font-awesome.min.css",
+      "SourceId": "InoxWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\udit.kumar\\source\\repos\\SyncDataApplication\\InoxWebApp\\wwwroot\\",
+      "BasePath": "_content/InoxWebApp",
+      "RelativePath": "css/font-awesome.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\font-awesome.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\udit.kumar\\source\\repos\\SyncDataApplication\\InoxWebApp\\wwwroot\\js\\bootstrap.min.js",
+      "SourceId": "InoxWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\udit.kumar\\source\\repos\\SyncDataApplication\\InoxWebApp\\wwwroot\\",
+      "BasePath": "_content/InoxWebApp",
+      "RelativePath": "js/bootstrap.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\bootstrap.min.js"
+    }
+  ]
+}
