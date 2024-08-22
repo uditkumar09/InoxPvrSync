@@ -7,7 +7,7 @@ using PvrWebApp.Model;
 namespace PvrWebApp.Controllers
 {
     [ApiController]
-    //[Route("[controller]")]
+    [Route("[controller]")]
     public class PvrController : ControllerBase
     {
         private readonly AppDbContext _context;
@@ -18,8 +18,8 @@ namespace PvrWebApp.Controllers
         }
         [HttpGet]
         //[Route("[controller]")]
-        [Route("api/[controller]")]
-        [ActionName("PvrUsers")]
+        //[Route("[controller]")]
+        //[ActionName("Get")]
         //[Route("/")]
         public async Task<ActionResult<IEnumerable<PvrUser>>> PvrUsers()
         {
@@ -27,10 +27,10 @@ namespace PvrWebApp.Controllers
             return await PvrUsers;
         }
 
-        [HttpGet]
+        [HttpGet("{pvruserid}")]
         //[Route("[controller]")]
-        [Route("api/[controller]/pvruserid")]
-        public IActionResult InoxUserbyId(int pvruserid)
+        //[Route("[controller]/pvruserid")]
+        public IActionResult PvrUsersById(int pvruserid)
         {
             var user = _context.PvrUsers.Find(pvruserid);
             if (user is null)
@@ -41,7 +41,7 @@ namespace PvrWebApp.Controllers
         }
 
         [HttpPost]
-        [Route("[controller]")]
+        //[Route("[controller]")]
         public IActionResult AddUser(AddPvrUser adduser)
         {
             var user = new PvrUser()
@@ -59,7 +59,7 @@ namespace PvrWebApp.Controllers
 
         [HttpPut]
         //[Route("[controller]")]
-        [Route("api/[controller]")]
+        //[Route("[controller]")]
         public IActionResult UpdateUser(int pvruserid, UpdatePvrUser updatePvrUser)
         {
             var user = _context.PvrUsers.Find(pvruserid);
@@ -76,9 +76,9 @@ namespace PvrWebApp.Controllers
             return Ok(user);
         }
 
-        [HttpDelete]
+        [HttpDelete("{pvruserid}")]
         //[Route("[controller]")]
-        [Route("api/[controller]/pvruserid")]
+        //[Route("[controller]/pvruserid")]
         public IActionResult DeleteUser(int pvruserid)
         {
             var user = _context.PvrUsers.Find(pvruserid);
@@ -91,8 +91,8 @@ namespace PvrWebApp.Controllers
             return Ok(user);
         }
 
-        [HttpGet]
-        [Route("~/PvrWebApp/InoxUsers")]
+        [HttpGet, Route("~/PvrWebApp/InoxUsers")]
+        //[Route("~/PvrWebApp/InoxUsers")]
         public IActionResult SyncWithPvr()
         {
             try
